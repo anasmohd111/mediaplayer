@@ -1,0 +1,134 @@
+                                                     REACT--Js library (front end developement)
+                                                  ------------------------------------------------
+
+basic Commands
+-------------------
+-to create project :npx create-react-app projectname
+-to rum project:npm start
+-to install react material ui - npm install @mui/material @emotion/react @emotion/styled
+-to build a project - npm run build
+-to install react bootstrap - npm install react-bootstrap bootstrap
+-to install react icons - npm i feather-icons-react
+-to install navigate react file - npm i react-router-dom
+
+basic concepts
+-------------------
+-reusable component based approach
+-JSX javascript Xml
+-fast
+
+
+front end difference
+ 
+ concept              angular                  react                       Vue
+ ----------------------------------------------------------------------------------
+ 1-developer       framework---google    library---meta/facebook          framework--opensource
+
+ 2-language         typescript            javascript                       javascript
+
+ 3-Dom             real Dom               Virutal Dom                      Virutal Dom
+
+ 4-data sharing     two data binding       one way data binding           two way data binding
+
+
+ react   component base application
+ -----------------------------------------
+
+ components :create a js file having a name starts with capital letter
+
+ two types of components
+ -----------------------------
+ 1-class based component---statefull component
+ 2-function based component----stateless component
+
+
+state is used to store values (also state has an advantage to tranfer value) we can share state to child component
+
+react hook - hook is predefined function and name start with use keyword 
+
+
+                 syntax :-
+                           use predefined-function()
+
+
+
+use state() - it is a function used create a state - state using for store value
+
+                 
+                 syntax :-
+                         
+                          
+                          const[statename,statevalueupdationdunction]=useState()
+
+
+
+props - is used to share data parent to child
+conditional rendering - 
+
+
+navigation
+-----------
+
+1. install react router dom
+2. BrowserRouter - use this to starting point to render
+
+features of axios
+-------------------
+
+Make http requests from node.js
+Supports the Promise API
+Intercept request and response
+Transform request and response data
+Cancel requests
+Automatic transforms for JSON data
+🆕 Automatic data object serialization to multipart/form-data and x-www-form-urlencoded body encodings
+
+common request config
+--------------------------
+
+These are the available config options for making requests. Only the url is required. Requests will default to GET if method is not specified.
+
+
+  // `url` is the server URL that will be used for the request
+  url: '/user',
+
+  // `method` is the request method to be used when making the request
+  method: 'get', // default
+
+  // `baseURL` will be prepended to `url` unless `url` is absolute.
+  // It can be convenient to set `baseURL` for an instance of axios to pass relative URLs
+  // to methods of that instance.
+  baseURL: 'https://some-domain.com/api/',
+
+   // `headers` are custom headers to be sent
+  headers: {'X-Requested-With': 'XMLHttpRequest'},
+
+// `data` is the data to be sent as the request body
+  // Only applicable for request methods 'PUT', 'POST', 'DELETE , and 'PATCH'
+  // When no `transformRequest` is set, must be of one of the following types:
+  // - string, plain object, ArrayBuffer, ArrayBufferView, URLSearchParams
+  // - Browser only: FormData, File, Blob
+  // - Node only: Stream, Buffer, FormData (form-data package)
+  data: {
+    firstName: 'Fred'
+  }
+
+  spread operator 
+  -------------------
+
+  using for show all input values even that was empty ----------------  ...state_name
+
+  state lifting - share data from child to parent
+  -------------
+
+1. create a state in parent - home.jsx
+2. store the successfull data (response 200) to the state
+
+watch history
+--------------
+
+1.create a watch history tab in home page
+2.create a new component for watch history
+3.(id,cardname,link,date)create watch history in db.json value array
+4.click on the videocard
+5.get watch history from json file to watch history component
